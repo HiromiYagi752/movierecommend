@@ -39,7 +39,7 @@ async def get_movie_id_endpoint(
     movie_id = get_movie_id_endpoint(category, year)
 
     # 類似映画を取得するリクエストを送信
-    api_url2 = "http://localhost:8000/get_movie_id_endpoint"
+    api_url2 = "https://_ _ _ _ _ .onrender.com/get_movie_id_endpoint"
     async with httpx.AsyncClient() as client:
         try:
             response = await client.post(api_url2, json={"movie_id": movie_id})
