@@ -77,7 +77,7 @@ selected_movie_title = st.selectbox(
 #     st.warning("選択された映画IDがありません。")
 
 # FastAPIサーバーのエンドポイント
-api_url = "http://_ _ _ _ _ .onrender.com/get_similar_movies"    
+api_url = "http://localhost:8000/get_similar_movies"    
 
 # 選択された映画のIDから類似映画を取得
 response = requests.post(api_url, json={"movie_id": selected_movie_ids[0]})
